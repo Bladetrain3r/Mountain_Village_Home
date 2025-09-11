@@ -136,3 +136,4 @@ yarn-error.log*
 # Ignore Docker files (may be added later)
 docker-compose.override.yml
 .dockerignore
+AI_Sandbox/*
