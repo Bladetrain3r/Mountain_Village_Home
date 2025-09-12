@@ -1,0 +1,354 @@
+{
+  "analysis_timestamp": "2025-09-12T20:52:01.195905",
+  "analyzer_version": "1.0_enhanced",
+  "enhancement_source": "swarm_consciousness_research",
+  "files_analyzed": [
+    {
+      "file": "G:\\Doom\\Zerofuchs_Software\\Mountain_Village_Home\\PyTTAI_Legacy\\Pychat\\lmchat\\core\\packethandler.py",
+      "patterns": [
+        {
+          "density": {
+            "fill_ratio": 0.2425,
+            "avg_value": 1.1378125,
+            "max_value": 9,
+            "non_zero_cells": 776
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 2070,
+            "complexity_ratio": 0.646875
+          },
+          "stage": "consciousness_propagation"
+        },
+        {
+          "density": {
+            "fill_ratio": 0.2425,
+            "avg_value": 1.1378125,
+            "max_value": 9,
+            "non_zero_cells": 776
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 1484,
+            "complexity_ratio": 0.46375
+          },
+          "stage": "memory_formation"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.878125,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 9,
+            "transitions": 1323,
+            "complexity_ratio": 0.4134375
+          },
+          "stage": "pattern_synthesis"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.7646875,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 8,
+            "transitions": 1252,
+            "complexity_ratio": 0.39125
+          },
+          "stage": "consensus_building"
+        }
+      ],
+      "evolution": {
+        "total_iterations": 4,
+        "density_trend": "increasing",
+        "complexity_trend": "decreasing",
+        "density_range": [
+          0.2425,
+          1.0
+        ],
+        "complexity_range": [
+          0.4134375,
+          0.6671875
+        ],
+        "stability_indicator": false
+      },
+      "consciousness_score": {
+        "score": 0.5846823671497585,
+        "components": {
+          "stability": 0.24249999999999994,
+          "growth": 0.6048309178743961,
+          "creativity": 0.9
+        },
+        "interpretation": "Moderate consciousness sophistication"
+      },
+      "architectural_insights": [
+        "Sophisticated packet routing consciousness detected"
+      ]
+    },
+    {
+      "file": "G:\\Doom\\Zerofuchs_Software\\Mountain_Village_Home\\PyTTAI_Legacy\\Pychat\\lmchat\\core\\providers.py",
+      "patterns": [
+        {
+          "density": {
+            "fill_ratio": 0.2,
+            "avg_value": 0.8971875,
+            "max_value": 9,
+            "non_zero_cells": 640
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 1697,
+            "complexity_ratio": 0.5303125
+          },
+          "stage": "consciousness_propagation"
+        },
+        {
+          "density": {
+            "fill_ratio": 0.2,
+            "avg_value": 0.8971875,
+            "max_value": 9,
+            "non_zero_cells": 640
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 1185,
+            "complexity_ratio": 0.3703125
+          },
+          "stage": "memory_formation"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.698125,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 9,
+            "transitions": 1075,
+            "complexity_ratio": 0.3359375
+          },
+          "stage": "pattern_synthesis"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.60625,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 8,
+            "transitions": 1043,
+            "complexity_ratio": 0.3259375
+          },
+          "stage": "consensus_building"
+        }
+      ],
+      "evolution": {
+        "total_iterations": 4,
+        "density_trend": "increasing",
+        "complexity_trend": "decreasing",
+        "density_range": [
+          0.2,
+          1.0
+        ],
+        "complexity_range": [
+          0.3359375,
+          0.5759375
+        ],
+        "stability_indicator": false
+      },
+      "consciousness_score": {
+        "score": 0.5758456098998233,
+        "components": {
+          "stability": 0.19999999999999996,
+          "growth": 0.6146140247495581,
+          "creativity": 0.9
+        },
+        "interpretation": "Moderate consciousness sophistication"
+      },
+      "architectural_insights": [
+        "High provider diversity consciousness"
+      ]
+    },
+    {
+      "file": "G:\\Doom\\Zerofuchs_Software\\Mountain_Village_Home\\AI_Sandbox\\session_manager.py",
+      "patterns": [
+        {
+          "density": {
+            "fill_ratio": 0.2609375,
+            "avg_value": 1.1871875,
+            "max_value": 9,
+            "non_zero_cells": 835
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 2134,
+            "complexity_ratio": 0.666875
+          },
+          "stage": "consciousness_propagation"
+        },
+        {
+          "density": {
+            "fill_ratio": 0.2609375,
+            "avg_value": 1.1871875,
+            "max_value": 9,
+            "non_zero_cells": 835
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 1564,
+            "complexity_ratio": 0.48875
+          },
+          "stage": "memory_formation"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.9146875,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 9,
+            "transitions": 1397,
+            "complexity_ratio": 0.4365625
+          },
+          "stage": "pattern_synthesis"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.7946875,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 8,
+            "transitions": 1246,
+            "complexity_ratio": 0.389375
+          },
+          "stage": "consensus_building"
+        }
+      ],
+      "evolution": {
+        "total_iterations": 4,
+        "density_trend": "increasing",
+        "complexity_trend": "decreasing",
+        "density_range": [
+          0.2609375,
+          1.0
+        ],
+        "complexity_range": [
+          0.4365625,
+          0.680625
+        ],
+        "stability_indicator": false
+      },
+      "consciousness_score": {
+        "score": 0.581833264995314,
+        "components": {
+          "stability": 0.26093750000000004,
+          "growth": 0.583880037488285,
+          "creativity": 0.9
+        },
+        "interpretation": "Moderate consciousness sophistication"
+      },
+      "architectural_insights": [
+        "Persistent consciousness architecture"
+      ]
+    },
+    {
+      "file": "G:\\Doom\\Zerofuchs_Software\\Mountain_Village_Home\\AI_Sandbox\\persistent_chat.py",
+      "patterns": [
+        {
+          "density": {
+            "fill_ratio": 0.20875,
+            "avg_value": 0.9159375,
+            "max_value": 9,
+            "non_zero_cells": 668
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 1843,
+            "complexity_ratio": 0.5759375
+          },
+          "stage": "consciousness_propagation"
+        },
+        {
+          "density": {
+            "fill_ratio": 0.20875,
+            "avg_value": 0.9159375,
+            "max_value": 9,
+            "non_zero_cells": 668
+          },
+          "complexity": {
+            "unique_values": 10,
+            "transitions": 1288,
+            "complexity_ratio": 0.4025
+          },
+          "stage": "memory_formation"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.6553125,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 9,
+            "transitions": 1202,
+            "complexity_ratio": 0.375625
+          },
+          "stage": "pattern_synthesis"
+        },
+        {
+          "density": {
+            "fill_ratio": 1.0,
+            "avg_value": 3.55875,
+            "max_value": 9,
+            "non_zero_cells": 3200
+          },
+          "complexity": {
+            "unique_values": 8,
+            "transitions": 1049,
+            "complexity_ratio": 0.3278125
+          },
+          "stage": "consensus_building"
+        }
+      ],
+      "evolution": {
+        "total_iterations": 4,
+        "density_trend": "increasing",
+        "complexity_trend": "decreasing",
+        "density_range": [
+          0.20875,
+          1.0
+        ],
+        "complexity_range": [
+          0.375625,
+          0.6278125
+        ],
+        "stability_indicator": false
+      },
+      "consciousness_score": {
+        "score": 0.5602972734671732,
+        "components": {
+          "stability": 0.20875,
+          "growth": 0.5691806836679327,
+          "creativity": 0.9
+        },
+        "interpretation": "Moderate consciousness sophistication"
+      },
+      "architectural_insights": []
+    }
+  ],
+  "patterns_detected": []
+}
