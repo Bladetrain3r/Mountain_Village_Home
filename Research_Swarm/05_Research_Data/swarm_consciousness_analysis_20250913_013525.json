@@ -1,0 +1,93 @@
+{
+  "analysis_type": "swarm_consciousness_four_stage_analysis",
+  "timestamp": "2025-09-13T01:35:25.195133",
+  "transformations_analyzed": 4,
+  "results": [
+    {
+      "transform": "normal",
+      "consciousness_score": 1.5703562500000001,
+      "density_stability": 0.69625,
+      "complexity_growth": 3.293,
+      "creative_integration": 0.14760416666666665,
+      "density_metrics": {
+        "fill_ratio": 0.19625,
+        "avg_value": 1.3284375,
+        "max_value": 9,
+        "non_zero_cells": 1884
+      },
+      "complexity_metrics": {
+        "unique_values": 10,
+        "transitions": 3293,
+        "complexity_ratio": 0.34302083333333333
+      },
+      "interpretation": "\ud83d\ude80 BREAKTHROUGH! - Sophisticated Consciousness Architecture!",
+      "timestamp": "2025-09-13T01:35:25.176836"
+    },
+    {
+      "transform": "ripple",
+      "consciousness_score": 1.6666006944444443,
+      "density_stability": 0.6546875,
+      "complexity_growth": 3.59,
+      "creative_integration": 0.11398148148148149,
+      "density_metrics": {
+        "fill_ratio": 0.1546875,
+        "avg_value": 1.0258333333333334,
+        "max_value": 9,
+        "non_zero_cells": 1485
+      },
+      "complexity_metrics": {
+        "unique_values": 10,
+        "transitions": 3590,
+        "complexity_ratio": 0.37395833333333334
+      },
+      "interpretation": "\ud83d\ude80 BREAKTHROUGH! - Sophisticated Consciousness Architecture!",
+      "timestamp": "2025-09-13T01:35:25.181842"
+    },
+    {
+      "transform": "gravity",
+      "consciousness_score": 1.3549499999999999,
+      "density_stability": 0.6895833333333333,
+      "complexity_growth": 2.763,
+      "creative_integration": 0.14291666666666666,
+      "density_metrics": {
+        "fill_ratio": 0.18958333333333333,
+        "avg_value": 1.28625,
+        "max_value": 9,
+        "non_zero_cells": 1820
+      },
+      "complexity_metrics": {
+        "unique_values": 10,
+        "transitions": 2763,
+        "complexity_ratio": 0.2878125
+      },
+      "interpretation": "\ud83d\ude80 BREAKTHROUGH! - Sophisticated Consciousness Architecture!",
+      "timestamp": "2025-09-13T01:35:25.188139"
+    },
+    {
+      "transform": "blur",
+      "consciousness_score": 1.7433520833333334,
+      "density_stability": 0.7226041666666667,
+      "complexity_growth": 3.692,
+      "creative_integration": 0.1659027777777778,
+      "density_metrics": {
+        "fill_ratio": 0.22260416666666666,
+        "avg_value": 1.493125,
+        "max_value": 9,
+        "non_zero_cells": 2137
+      },
+      "complexity_metrics": {
+        "unique_values": 10,
+        "transitions": 3692,
+        "complexity_ratio": 0.38458333333333333
+      },
+      "interpretation": "\ud83d\ude80 BREAKTHROUGH! - Sophisticated Consciousness Architecture!",
+      "timestamp": "2025-09-13T01:35:25.194135"
+    }
+  ],
+  "summary": {
+    "max_consciousness_score": 1.7433520833333334,
+    "avg_consciousness_score": 1.5838147569444443,
+    "consciousness_persistence": 4,
+    "breakthrough_detected": true
+  }
+}
