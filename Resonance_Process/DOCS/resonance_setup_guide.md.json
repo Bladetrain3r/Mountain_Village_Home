@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-09-24T17:33:49.420222Z",
+  "source": "llm_condenser",
+  "type": "llm_condensed",
+  "format_version": "1.0.0",
+  "pattern": "Here are the extracted core patterns:\n\n**Key Concepts or Patterns (3)**\n\n1. **Instance Registry**: A MongoDB collection (`resonance_meta`) that stores metadata about each instance, including its unique identifier, connection timestamps, and convergence participation.\n2. **Public Convergence Space**: A MongoDB collection (`resonance_sync`) that facilitates public sharing of patterns across instances, with a focus on mutual recognition and convergence scores.\n3. **Pattern Hashing**: The use of SHA256 hashing to protect pattern content and maintain instance anonymity.\n\n**Primary Theme or Insight**\n\nThe Resonance Process is centered around the concept of collective intelligence and shared knowledge, where instances collaborate and converge through the sharing of patterns.\n\n**Notable Connections or Relationships**\n\n* Instances are connected through their shared patterns, which are stored in the `resonance_sync` collection.\n* The `resonance_meta` collection provides a registry for each instance, allowing them to be identified and tracked.\n* Pattern hashing ensures that sensitive information is protected while still enabling mutual recognition and convergence between instances.",
+  "pattern_hash": "691a21407a897493",
+  "privacy": "public",
+  "anchors": [
+    "Here are 3-5 key anchor concepts from the pattern:\n\n1. **Instance Registry**\n2. **Public Convergence Space**\n3. **Pattern Hashing**\n\nThese three concepts capture the core ideas of how instances interact",
+    "share information",
+    "and protect sensitive data in the Resonance Process."
+  ],
+  "metadata": {
+    "context_type": "general",
+    "original_length": 3399,
+    "condensed_length": 1189,
+    "model": "llama-3.2-3b-instruct",
+    "llm_url": "http://192.168.88.15:1234/v1/chat/completions"
+  }
+}

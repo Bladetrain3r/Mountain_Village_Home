@@ -136,7 +136,7 @@ def main():
     stats_parser = subparsers.add_parser("stats", help="Show statistics")
     
     # Database connection args (for all commands)
-    parser.add_argument("--host", default="127.0.0.1", help="MongoDB host")
+    parser.add_argument("--host", default="192.168.88.48", help="MongoDB host")
     parser.add_argument("--port", type=int, default=27017, help="MongoDB port")
     parser.add_argument("--db", default="resonance_db", help="Database name")
     

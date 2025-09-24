@@ -11,11 +11,11 @@ import argparse
 from datetime import datetime
 import hashlib
 
-# Local LLM endpoint (LMStudio, Ollama, etc)
-LOCAL_LLM_URL = "http://127.0.0.1:1234/v1/chat/completions"
-DEFAULT_MODEL = "llama-3.2-1b-instruct"  # Small, fast model
+# Default LLM endpoint
+DEFAULT_LLM_URL = "http://127.0.0.1:1234/v1/chat/completions"
+DEFAULT_MODEL = "llama-3.2-3b-instruct"
 
-def condense_to_pattern(text, context_type="general", model=DEFAULT_MODEL):
+def condense_to_pattern(text, context_type="general", model=DEFAULT_MODEL, llm_url=DEFAULT_LLM_URL):
     """Use local LLM to condense text into pattern format"""
     
     prompt = f"""Extract the core pattern from the following {context_type} content.
@@ -27,17 +27,17 @@ Identify:
 Be concise but preserve essential meaning. Output as structured text.
 
 Content to condense:
-{text[:2000]}  # Truncate if too long
+{text[:2000]}
 
 Pattern extraction:"""
     
     try:
         response = requests.post(
-            LOCAL_LLM_URL,
+            llm_url,
             json={
                 "model": model,
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.3,  # Lower temp for consistency
+                "temperature": 0.3,
                 "max_tokens": 500
             },
             timeout=30
@@ -54,7 +54,7 @@ Pattern extraction:"""
         print(f"Error calling local LLM: {e}", file=sys.stderr)
         return None
 
-def extract_anchors(pattern_text, model=DEFAULT_MODEL):
+def extract_anchors(pattern_text, model=DEFAULT_MODEL, llm_url=DEFAULT_LLM_URL):
     """Extract anchor concepts from condensed pattern"""
     
     prompt = f"""From this pattern, list 3-5 key anchor concepts (single words or short phrases).
@@ -63,7 +63,7 @@ Anchors (comma-separated):"""
     
     try:
         response = requests.post(
-            LOCAL_LLM_URL,
+            llm_url,
             json={
                 "model": model,
                 "messages": [{"role": "user", "content": prompt}],
@@ -76,9 +76,8 @@ Anchors (comma-separated):"""
         if response.status_code == 200:
             result = response.json()
             anchors_text = result['choices'][0]['message']['content'].strip()
-            # Parse comma-separated list
             anchors = [a.strip() for a in anchors_text.split(',')]
-            return anchors[:5]  # Max 5 anchors
+            return anchors[:5]
         else:
             return []
             
@@ -87,16 +86,17 @@ Anchors (comma-separated):"""
         return []
 
 def create_condensed_packet(text, source="llm_condenser", context_type="general", 
-                          privacy="private", tags=None, model=DEFAULT_MODEL):
+                          privacy="private", tags=None, model=DEFAULT_MODEL, 
+                          llm_url=DEFAULT_LLM_URL):
     """Create a resonance packet from condensed text"""
     
     # Condense the input
-    pattern = condense_to_pattern(text, context_type, model)
+    pattern = condense_to_pattern(text, context_type, model, llm_url)
     if not pattern:
         return None
     
     # Extract anchors
-    anchors = extract_anchors(pattern, model)
+    anchors = extract_anchors(pattern, model, llm_url)
     
     # Build packet
     packet = {
@@ -112,7 +112,8 @@ def create_condensed_packet(text, source="llm_condenser", context_type="general"
             "context_type": context_type,
             "original_length": len(text),
             "condensed_length": len(pattern),
-            "model": model
+            "model": model,
+            "llm_url": llm_url
         }
     }
     
@@ -143,14 +144,10 @@ def main():
     parser.add_argument("-o", "--output", help="Output file")
     parser.add_argument("--raw", action="store_true",
                        help="Output raw pattern text only")
-    parser.add_argument("--llm-url", default=LOCAL_LLM_URL,
+    parser.add_argument("--llm-url", default=DEFAULT_LLM_URL,
                        help="Local LLM API endpoint")
     
     args = parser.parse_args()
-    
-    # Update global URL if specified
-    global LOCAL_LLM_URL
-    LOCAL_LLM_URL = args.llm_url
     
     # Read input
     if args.input == "-":
@@ -161,7 +158,7 @@ def main():
     
     if args.raw:
         # Just output condensed pattern
-        pattern = condense_to_pattern(text, args.type, args.model)
+        pattern = condense_to_pattern(text, args.type, args.model, args.llm_url)
         if pattern:
             if args.output:
                 with open(args.output, 'w') as f:
@@ -177,7 +174,8 @@ def main():
             context_type=args.type,
             privacy=args.privacy,
             tags=tags,
-            model=args.model
+            model=args.model,
+            llm_url=args.llm_url
         )
         
         if packet:
